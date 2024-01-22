@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>ADMIN PAGE </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Submit News/Event Form</header>
+
+        <form action="https://formsubmit.co/kingzykesh634@gmail.com" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="News Submission!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://akemfoundation.com.ng">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">After filling this form, the website news blog will automatically update itself after 24HRS of submission.</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Title</label>
+                            <input type="text" name="Title" placeholder="Enter the Title of the Event" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Alt Title</label>
+                            <input type="text" name="AltTitle" placeholder="Enter An Aleternative Title" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date & Time</label>
+                            <input type="date" placeholder="Enter the Date of Event" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Valid Email</label>
+                            <input type="email" name="Email" placeholder="Enter your email" required>
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Required Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Details / Write Up About the event</label>
+                            <input type="text" name="WriteUp" placeholder="Event Write-Up" required maxlength="500">
+                        </div>
+                    
+
+                        <div class="image-field">
+                            <label for="photoUpload">Photo Upload</label>
+                            <input type="file" id="photoUpload" name="image" accept="image/png, image/jpeg" required>
+                        </div>
+                        
+
+                        
+                        <div class="image-field">
+                            <label for="photoUpload">Photo Upload</label>
+                            <input type="file" id="photoUpload" name="image2" accept="image/png, image/jpeg" required>
+                        </div>
+
+                        
+                        <div class="image-field">
+                            <label for="photoUpload">Photo Upload</label>
+                            <input type="file" id="photoUpload" name="image3" accept="image/png, image/jpeg" required>
+                        </div>
+                    </div>
+
+                    <button class="sumbit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
