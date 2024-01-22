@@ -162,9 +162,9 @@ people like this</p>
 <div class="col-sm-4 text-center my-2 my-sm-0">
 </div>
 <ul class="social-icons">
-<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  <li><a href="#" onclick="shareOnFacebook(); return false;"><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href="#" onclick="shareOnTwitter(); return false;"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="#" onclick="shareOnInstagram(); return false;"><i class="fab fa-instagram"></i></a></li>
 </ul>
 </div>
 <div class="comments-area">
@@ -325,6 +325,26 @@ people like this</p>
 <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
 
+
+<script>
+  function shareOnFacebook() {
+    // Replace 'YourPageURL' with the URL of the page you want to share
+    var pageURL = encodeURIComponent(window.location.href);
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + pageURL, 'Share on Facebook', 'width=600,height=400');
+  }
+
+  function shareOnTwitter() {
+    // Replace 'YourPageURL' with the URL of the page you want to share
+    var pageURL = encodeURIComponent(window.location.href);
+    window.open('https://twitter.com/intent/tweet?url=' + pageURL, 'Share on Twitter', 'width=600,height=400');
+  }
+
+  function shareOnInstagram() {
+    // Replace 'YourPageURL' with the URL of the page you want to share
+    var pageURL = encodeURIComponent(window.location.href);
+    window.open('https://www.instagram.com/sharer.php?u=' + pageURL, 'Share on Instagram', 'width=600,height=400');
+  }
+</script>
 
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
